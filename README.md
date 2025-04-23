@@ -1,4 +1,4 @@
-#**Greetings!** <br>
+# **Greetings!** <br>
 
 **To view the project go "PYTHON K-Means..." File (This includes comments and markdown).** <br>
 
