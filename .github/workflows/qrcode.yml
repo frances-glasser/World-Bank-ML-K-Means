@@ -14,7 +14,7 @@ jobs:
         text: https://github.com/frances-glasser/World-Bank_ML-K-Means  # <-- replace with your GitHub link
         path: qrcode.png
     - name: Upload QR Code as artifact
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       with:
         name: qrcode
         path: qrcode.png
