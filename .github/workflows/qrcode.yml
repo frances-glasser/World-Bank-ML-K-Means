@@ -1,0 +1,20 @@
+name: QRCode
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: snow-actions/qrcode@v1.2.0
+      with:
+        text: https://github.com/frances-glasser/World-Bank_ML-K-Means  # <-- replace with your GitHub link
+        path: qrcode.png
+    - name: Upload QR Code as artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: qrcode
+        path: qrcode.png
